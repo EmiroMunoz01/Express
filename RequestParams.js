@@ -12,12 +12,11 @@ app.get("/hello/:user", (req, res) => {
 
 //envio de varios parametros
 app.get("/add/:x/:y", (req, res) => {
-    
-    const {x,y} = req.params
-    // console.log(req.params.x);
-    // console.log(req.params.y);
-    
-    res.send(`Result: ${parseInt(x)+ parseInt(y)}`)
+  const { x, y } = req.params;
+  // console.log(req.params.x);
+  // console.log(req.params.y);
+
+  res.send(`Result: ${parseInt(x) + parseInt(y)}`);
 });
 
 app.listen(3000);
